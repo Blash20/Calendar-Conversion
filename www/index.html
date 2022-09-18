@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello wasm-pack!</title>
+  </head>
+  <body id="mainBody">
+    <form id = "convertDate">
+      <label for="selectCal">From </label>
+      <select id="selectCal">
+        <option value=""></option>
+        <option value="Gregorian">Gregorian (Proleptic)</option>
+        <option value="Hebrew">Hebrew</option>
+        <option value="Julian">Julian (Proleptic)</option>
+      </select>
+      <label for="toCal">To </label>
+      <select id="toCal">
+        <option value=""></option>
+        <option value="Gregorian">Gregorian (Proleptic)</option>
+        <option value="Hebrew">Hebrew</option>
+        <option value="Julian">Julian (Proleptic)</option>
+      </select>
+    </form>
+    <div id="dateDiv">
+      
+    </div>
+    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+    <script src="./bootstrap.js"></script>
+  </body>
+</html>
