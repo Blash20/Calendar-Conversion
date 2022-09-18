@@ -1,6 +1,6 @@
 ## About
 
-Converts date in one calendar to date in another calendar. Uses wasm-pack-template
+Converts date in one calendar to date in another calendar. Uses wasm-pack-template (see https://github.com/rustwasm/wasm-pack-template)
 
 ## License
 
