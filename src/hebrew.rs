@@ -1,7 +1,7 @@
 use crate::invalid_year_err::CalendarError;
 use crate::cal::Calendar;
 use std::convert::TryInto;
-use crate::{GenericDate, log_to_console};
+use crate::GenericDate;
 
 pub struct HebrewDate {
     pub year: u32,
@@ -321,7 +321,7 @@ pub(crate) fn to_hebrew(julian_day: i128) -> Result<HebrewDate, CalendarError> {
     }
 }
 
-pub(crate) fn from_hebrew(date: &HebrewDate) -> Result<i128, CalendarError> {
+fn from_hebrew(date: &HebrewDate) -> Result<i128, CalendarError> {
     if date.month > 13 {
         return Err(CalendarError::InvalidInput);
     }
