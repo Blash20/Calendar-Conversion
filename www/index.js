@@ -12,6 +12,8 @@ console.log(dateToString(date, Calendars.Julian));
 const selectCal = document.getElementById("selectCal");
 selectCal.addEventListener("change", calSelect);
 
+
+// Converts a date object to a string
 function dateToString(date, cal) {
     let output = '';
 
@@ -56,6 +58,7 @@ function dateToString(date, cal) {
     return output;
 }
 
+// parses the date conversion form. Then converts the data and returns a string showing the data or an error message if the user incorrectly entered invalid or incomplete information
 function parseForm() {
     const incompleteFormMsg = "You left important information blank";
 
@@ -86,6 +89,7 @@ function parseForm() {
     return dateString;
 }
 
+// parses the requested date conversion and updates the page accordingly
 function displayDate() {
 
     const dateString = parseForm();
@@ -101,6 +105,7 @@ function displayDate() {
     
 }
 
+// shows the appropriate conversion form depending on the selected input format
 function calSelect() {
     console.log("Hi there, I see you're looking at the console");
     const selectElement = document.querySelector('#selectCal');
@@ -108,11 +113,7 @@ function calSelect() {
     showForm(output);
   }
 
-function revealMessage() {
-    console.log("hey!!");
-    document.getElementById("hiddenMessage").style.display = 'block';
-}
-
+// shows the date conversion form
 function showForm(val) {
     const previousForm = document.getElementById("selectDate");
     if (previousForm != null) {
