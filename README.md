@@ -2,6 +2,11 @@
 
 Converts date in one calendar to date in another calendar. Uses wasm-pack-template (see https://github.com/rustwasm/wasm-pack-template)
 
+## How to run
+
+In www, run "npm run start"
+Then go to localhost:8080 in browser
+
 ## License
 
 Dual licensed under
